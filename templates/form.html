@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Baja</title>
+</head>
+<body>
+    <h2>Formulario de Baja</h2>
+    <form action="/submit" method="post">
+        <!-- Información del Alumno -->
+        <label for="nombre_alumno">Nombre del Alumno:</label><br>
+        <input type="text" id="nombre_alumno" name="nombre_alumno" required><br><br>
+
+        <label for="matricula">Matrícula:</label><br>
+        <input type="text" id="matricula" name="matricula" required><br><br>
+
+        <label for="grupo">Grupo:</label><br>
+        <input type="text" id="grupo" name="grupo" required><br><br>
+
+        <label for="turno">Turno:</label><br>
+        <select id="turno" name="turno" required>
+            <option value="matutino">M</option>
+            <option value="vespertino">V</option>
+        </select><br><br>
+
+        <label for="carrera">Carrera:</label><br>
+        <input type="text" id="carrera" name="carrera" required><br><br>
+
+        <label for="nivel">Nivel:</label><br>
+        <select id="nivel" name="nivel" required>
+            <option value="licenciatura">Licenciatura</option>
+            <option value="tsu">tsu</option>
+        </select><br><br>
+
+        <label for="Cuatrimestre">Cuatrimestre:</label><br>
+        <select id="cuatrimestre" name="cuatrimestre" required>
+            <option value="E-A">E-A</option>
+            <option value="M-A">M-A</option>
+            <option value="S-D">S-D</option>
+        </select><br><br>
+        <!-- Motivo de Baja -->
+        <label for="motivo_baja">Motivo de Baja:</label><br>
+        <select id="motivo_baja" name="motivo_baja" required>
+            <option value="CAUSA DESCONOCIDA">CAUSA DESCONOCIDA</option>
+            <option value="INCUMPLIMIENTO DE EXPECTATIVAS ">INCUMPLIMIENTO DE EXPECTATIVAS</option>
+            <option value="REPROBACIÓN ">REPROBACIÓN</option>
+            <option value="PROBLEMAS ECONÓMICOS">PROBLEMAS ECONÓMICOS</option>
+            <option value="MOTIVOS PERSONALES">MOTIVOS PERSONALES</option>
+            <option value="DISTANCIA DE LA UNIVERSIDAD (PROBLEMAS DE TRASPORTE)">DISTANCIA DE LA UNIVERSIDAD (PROBLEMAS DE TRASPORTE)</option>
+            <option value="PROBLEMAS DE TRABAJO">PROBLEMAS DE TRABAJO</option>
+            <option value="CAMBIO DE INSTITUCIÓN">CAMBIO DE INSTITUCIÓN</option>
+            <option value="CAMBIO DE CARRERA">CAMBIO DE CARRERA</option>
+            <option value="CAMBIO DE RESIDENCIA">CAMBIO DE RESIDENCIA</option>
+            <option value="FALTAS AL REGLAMENTO ESCOLAR">FALTAS AL REGLAMENTO ESCOLAR</option>
+            <option value="BAJO RENDIMIENTO ACADÉMICO">BAJO RENDIMIENTO ACADÉMICO</option>
+            <option value="SALUD">SALUD</option>
+            <option value="DEFUNCIÓN">DEFUNCIÓN</option>
+            <option value="INASISTENCIAS">INASISTENCIAS</option>
+            <option value="EMBARAZO">EMBARAZO</option>
+            <option value="MALA ELECCIÓN DE CARRERA">MALA ELECCIÓN DE CARRERA</option>
+            <option value="VIOLENCIA ESCOLAR">VIOLENCIA ESCOLAR</option>
+            <!-- Puedes agregar más motivos aquí -->
+        </select><br><br>
+
+        <label for="detalles_baja">Detalles de la Baja:</label><br>
+        <textarea id="detalles_baja" name="detalles_baja" rows="4" cols="50" placeholder="Especifique más detalles..." required></textarea><br><br>
+
+        <!-- Tipo de Baja -->
+        <label for="tipo_baja">Tipo de Baja:</label><br>
+        <select id="tipo_baja" name="tipo_baja" required>
+            <option value="temporal">Temporal</option>
+            <option value="definitiva">Definitiva</option>
+        </select><br><br>
+
+        <!-- Información del Tutor -->
+        <label for="nombre_tutor">Nombre del Tutor:</label><br>
+        <input type="text" id="nombre_tutor" name="nombre_tutor" required><br><br>
+
+        <!--informacion de la fecha-->
+        <label for="fecha_baja">fecha de la baja:</label><br>
+        <input type="text" id="fecha_baja" name="fecha_baja" required><br><br>
+
+        <!-- Información del Responsable -->
+        <label for="numero_empleado">Número de Empleado:</label><br>
+        <input type="number" id="numero_empleado" name="numero_empleado" required><br><br>
+
+        <label for="baja_responsable">Baja Responsable:</label><br>
+        <select id="baja_responsable" name="baja_responsable" required>
+            <option value="tutor">Tutor</option>
+            <option value="alumno">Alumno</option>
+        </select><br><br>
+
+        <label for="departamento_responsable">Departamento Responsable:</label><br>
+        <input type="text" id="departamento_responsable" name="departamento_responsable" required><br><br>
+
+        <label for="baja_fecha">fecha de la baja:</label><br>
+        <input type="text" id="baja_fecha" name="baja_fecha" required><br><br>
+
+        <input type="submit" value="Enviar">
+        <!-- Fecha de Baja -->
+ 
